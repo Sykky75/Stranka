@@ -6,32 +6,78 @@
     <title>Uprostřed</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Monaco', cursive, sans-; /* Použití komiksového písma */
             line-height: 1.6;
             margin: 0;
             padding: 20px;
             background-color: #f9f9f9;
+            text-align: center; /* Zarovnání textu na střed pro celé tělo */
         }
         header {
-            background: #000000;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
+            background: #000000; /* Jasnější barva pro hlavičku */
+            color: #000;
+            padding: 20px 0;
+            border-bottom: px solid #000000; /* Rám pro zvýraznění */
         }
         h1 {
             margin: 0;
+            font-size: 4em; /* Větší nadpis */
+            animation: pulseRotate 3s infinite; /* Přidání animace */
+        }
+        @keyframes pulseRotate {
+            0% {
+                transform: scale(1) rotate(0deg);
+                color: #000;
+                opacity: 1;
+            }
+            25% {
+                transform: scale(1.1) rotate(5deg);
+                color: #455057; /* Změna barvy při animaci */
+                opacity: 0.9;
+            }
+            50% {
+                transform: scale(1.2) rotate(-5deg);
+                color: #b1a096; /* Další změna barvy */
+                opacity: 0.8;
+            }
+            75% {
+                transform: scale(1.1) rotate(5deg);
+                color: #525252; /* Návrat k předchozí barvě */
+                opacity: 0.9;
+            }
+            100% {
+                transform: scale(1) rotate(0deg);
+                color: #000;
+                opacity: 1;
+            }
         }
         section {
             margin: 20px 0;
             padding: 20px;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            border-radius: 10px; /* Zaoblené rohy */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Silnější stín */
+            display: block; /* Zajištění, že sekce jsou blokové */
+            text-align: center; /* Zarovnání textu uvnitř sekcí na střed */
+        }
+        h2 {
+            color: #f77002; /* Jasnější barva pro podnadpisy */
+            font-size: 1.8em; /* Větší podnadpis */
+        }
+        p {
+            font-size: 1.2em; /* Větší text pro odstavce */
+        }
+        ul {
+            list-style-type: square; /* Změna stylu seznamu */
+            padding-left: 20px;
+            display: inline-block; /* Umožňuje centrální zarovnání seznamu */
+            text-align: left; /* Zarovnání textu v seznamu doleva */
+            font-size: 1em; /* Větší text pro seznam */
         }
         footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
+            margin-top: 15px;
+            font-size: 1em; /* Větší text pro patičku */
+            color: #555; /* Šedá barva pro text patičky */
         }
     </style>
 </head>
@@ -42,26 +88,24 @@
 </header>
 
 <section>
-    <h2>Welcome in prague help website!</h2>
-    <p>
+    <h2>Welcome to our site </h2> 
+    <p>Welcome in best comunnity in prague night life</p>
+</section>
+
 <section>
-    <h2>Whats about</h2>
-    <p>Here you find a help for every party</p>
+    <h2>What's About </h2>
+    <p>Here you find a help for every party .</p>
 </section>
 
 <section>
     <h2>Recommended Clubs</h2>
     <ul>
-        <li>James Dean
-        <li>Kozička
-        <li>M1
+        <li>James Dean</li>
+        <li>Kozička</li>
+        <li>M1</li>
         <li>Epic</li>
-      
     </ul>
 </section>
 
 <footer>
-    <p>If you want a help just hit us on telegram @ActiveOwl</footer>
-
-</body>
-</html>
+    <p>If you need some help just hit us on telegram @ActiveOwl
